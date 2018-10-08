@@ -40,3 +40,9 @@ pel                     = -PL
 lp                      = ??
 tie, sie                = -GS
 ```
+
+### Plural ending
+
+The `-en` verb or noun plural ending is stroked as `-Z` (`HAUDZ` = houden, `HAPBDZ` = handen), except for words ending on `-T` which get `-TS` (`KRAPBTS` = kranten).
+
+To do: solve conflicts with words ending on -ds (Nederlands vs. Nederlanden).
