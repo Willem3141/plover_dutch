@@ -1,48 +1,70 @@
 # plover_dutch
-My Dutch steno theory and dictionary
+
+This is my effort towards constructing a steno system for the Dutch language, using the Ireland layout usually used for writing English. I try to keep this Dutch system as similar as possible to Plover's English system, to minimize confusion between the two. However, there are quite a few differences that are necessary to make this system practical.
+
+> **Warning:** this system is not finalized. I am definitely still going to finetune the rules a bit more. Furthermore, the dictionary is still very small (~700 entries at the time of writing). I'm adding words as I encounter them, but this is not a very fast process.
+
 
 ## Vowels
-```
-a            = A
-aa           = AE
-au           = AU
-e            = E
-ee           = AEU
-ei, ij, aai  = AOEU
-    - conflict -> ei, aai = AO*EU
-eu, etc.     = AO
-i            = EU
-ie           = AOE
-o            = O
-oe           = AOU
-oi, ooi, ui  = OEU
-oo           = OE
-u, uu        = U
-```
+
+The main vowels are spelt in the same way as in English (that is, vowels that sound the same get the same key).
+
+| Phoneme | Stroke | Remarks |
+|:--:|:--:|----|
+| a | `A` | short _a_ as in lamp |
+| aa | `AE` | long _a_ as in taart, lader |
+| e | `E` | short _e_ as in mep |
+| ee | `AEU` | long _e_ as in meer, beter |
+| i | `EU` | short _i_ as in pit |
+| ie | `AOE` | long _i_ as in lied |
+| o | `O` | short _o_ as in kop |
+| oo | `OE` | long _o_ as in koop, koper |
+| u / uu | `U` | short or long _u_, doesn't matter |
+
+Note that, just like in English, this system is phonetic, that is, theoretically the spelling doesn't matter. However, the spelling of Dutch is way more regular than the spelling of English, which makes it easier to be consistent with short and long vowels. In many cases, the choice between long and short is therefore spelling-inspired. For example, the word _planeet_ is stroked with `AE` (long _a_) as `PHRAE/NAEUT`, not with `A` (short _a_), because _pla_ is an open syllable in the spelling (even though in practice, many people say it with a short _a_ anyway. On the other hand, wherever sensible, I do try to put the variants in (in fact, `PHRA/NAEUT` does work as well).
+
+These are the diphtongues:
+
+| Phoneme | Stroke | Remarks |
+|:--:|:--:|----|
+| au | `AU` | `AU` and `OU` sound the same, and are distinguished by spelling |
+| ou | `OU` | |
+| ij / ei / aai | `AOEU` | in case of a conflict, the _ei_ spelling gets a `*` |
+| oe | `AOU` | |
+| oi / ooi / ui | `OEU` | |
+| eu | `AO` | also used as a random disambiguator |
+
 
 ## Initial consonants
-```
-sch, sh (shop)          = SH-
-schr                    = SR-
-j                       = SKWR- / KWR- (still need to decide??)
-ch                      = KH-
-g                       = TKPW-
-vl                      = TPHR- (als fl)
-vr                      = TPR- (als fr)
-```
+
+Mostly the same as in English. The following are different:
+
+| Phoneme | Stroke | Remarks |
+|:--:|:--:|----|
+| sch | `SH` | |
+| schr | `SR` | |
+| j | `KWR` | as in jas, not as in jeans |
+| ch | `KH` | |
+| g | `TKPW` | as in either gas or goal |
+| vl | `TPHR` | stroked as _fl_ |
+| vr | `TPR` | stroked as _fr_ |
+
 
 ## Final consonants
-```
-ch, g                   = -G
-ng, nk                  = -PBG
-    - conflict -> nk = *PBG
-pel                     = -PL
-lp                      = ??
-tie, sie                = -GS
-```
 
-### Plural ending
+Here there are some differences. In particular, Dutch has a very common `-en` ending, used for plurals and verb infinitives. This is so common that the `-Z` key is solely used for this ending. So, it is not used for words ending in *-s* or *-z* (the `-S` key is used for those).
 
-The `-en` verb or noun plural ending is stroked as `-Z` (`HAUDZ` = houden, `HAPBDZ` = handen), except for words ending on `-T` which get `-TS` (`KRAPBTS` = kranten).
+Because `-TZ` cannot be stroked (we don't use the Philly shift or stuff like that), as a special rule, we use `-TSDZ` instead of `-TZ` (for the _-ten_ ending).
 
-To do: solve conflicts with words ending on -ds (Nederlands vs. Nederlanden).
+| Phoneme | Stroke | Remarks |
+|:--:|:--:|----|
+| -en | `-Z` | |
+| -ten | `-TSDZ` | not `-TZ` because that cannot be done |
+
+Here is an incomplete list of other interesting endings:
+
+| Phoneme | Stroke | Remarks |
+|:--:|:--:|----|
+| ch / g | `-G` | |
+| ng / nk | `-PBG` | in case of a conflict, _nk_ gets a `*` |
+| tie / sie | `-GS` | like in actie; this is just for consistency with English |
