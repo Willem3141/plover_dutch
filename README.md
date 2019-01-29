@@ -48,6 +48,7 @@ Mostly the same as in English. The following are different:
 | g | `TKPW` | as in either gas or goal |
 | vl | `TPHR` | stroked as _fl_ |
 | vr | `TPR` | stroked as _fr_ |
+| z | `STKPW` | |
 
 
 ## Final consonants
