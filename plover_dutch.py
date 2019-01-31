@@ -29,6 +29,14 @@ NUMBERS = {
 UNDO_STROKE_STENO = '*'
 
 ORTHOGRAPHY_RULES = [
+    # == +en ==
+    # lat + en = latten
+    (r'^(.*[^aeiou][aeiou])([bdfgklmnprst]) \^ en$', r'\1\2\2en'),
+    # laat + en = laten
+    (r'^(.*)aa([bdfgklmnprst]) \^ en$', r'\1a\2en'),
+    (r'^(.*)ee([bdfgklmnprst]) \^ en$', r'\1e\2en'),
+    (r'^(.*)oo([bdfgklmnprst]) \^ en$', r'\1o\2en'),
+    (r'^(.*)uu([bdfgklmnprst]) \^ en$', r'\1u\2en'),
 ]
 
 ORTHOGRAPHY_RULES_ALIASES = {}
