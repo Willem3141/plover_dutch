@@ -55,12 +55,12 @@ Mostly the same as in English. The following are different:
 
 Here there are some differences. In particular, Dutch has a very common `-en` ending, used for plurals and verb infinitives. This is so common that the `-Z` key is solely used for this ending. So, it is not used for words ending in *-s* or *-z* (the `-S` key is used for those).
 
-Because `-TZ` cannot be stroked (we don't use the Philly shift or stuff like that), as a special rule, we use `-TSDZ` instead of `-TZ` (for the _-ten_ ending).
+Because `-TZ` cannot be stroked (we don't use the Philly shift or stuff like that), as a special rule, we use just `-Z` (for the _-ten_ ending).
 
 | Phoneme | Stroke | Remarks |
 |:--:|:--:|----|
 | -en | `-Z` | |
-| -ten | `-TSDZ` | not `-TZ` because that cannot be done |
+| -ten | `-Z` | not `-TZ` because that cannot be done |
 
 Here is an incomplete list of other interesting endings:
 
