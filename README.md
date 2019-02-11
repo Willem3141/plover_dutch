@@ -69,3 +69,43 @@ Here is an incomplete list of other interesting endings:
 | ch / g | `-G` | |
 | ng / nk | `-PBG` | in case of a conflict, _nk_ gets a `*` |
 | tie / sie | `-GS` | like in actie; this is just for consistency with English |
+
+
+## Briefs
+
+### Pronominal adverbs
+
+To write [pronominal adverbs](https://en.wikipedia.org/wiki/Pronominal_adverb) in a single stroke, the following system is used.
+
+| | daar- | er- | hier- | waar- | - (suffix) |
+|---:|:--:|:--:|:--:|:--:|:--:|
+| **-aan** | `DR-N` | `R-N` | `HR-N` | `WR-N` | `-N` | `AEN` |
+| **-achter** ||||| `ARG` |
+| **-af** ||||| `AF` |
+| **-bij** | `DR-B` | `R-B` | `HR-B` | `WR-B` | `-B` | `BAOI` |
+| **-binnen** ||||| `BIN` |
+| **-boven** ||||| `BOEF` |
+| **-buiten** ||||| `BOIN` |
+| **-door** | `DR-D` | `R-D` | `HR-D` | `WR-D` | `-D` | `DOER` |
+| **-heen** ||||| `HAIN` |
+| **-in** | `DR-*N` | `R-*N` | `HR-*N` | `WR-*N` | `-*N` | `N-` |
+| **-langs** ||||| `LANGS` |
+| **-mee** | `DR-*M` | `R-*M` | `HR-*M` | `WR-*M` | `-*M` | `MAI` |
+| **-na** ||||| `NAE` |
+| **-naar** | `DR-R` | `R-R` | `HR-R` | `WR-R` | `-R` | `NAER` |
+| **-naartoe** | `DR-RT` | `R-RT` | `HR-RT` | `WR-RT` | `-RT` | `NAOU` |
+| **-naast** ||||| `NAEFT` |
+| **-om** | `DR-M` | `R-M` | `HR-M` | `WR-M` | `-M` | `OM` |
+| **-onder** ||||| `N-N` |
+| **-op** | `DR-P` | `R-P` | `HR-P` | `WR-P` | `-P` | `OP` |
+| **-over** | `DR-*FR` | `R-*FR` | `HR-*FR` | `WR-*FR` | `-*FR` | `OEFR` |
+| **-overheen** ||||| `OEFRN` |
+| **-tegen** | `DR-G` | `R-G` | `HR-G` | `WR-G` | `-G` | `TAIG` |
+| **-tegenover** ||||| `TAIFRG` |
+| **-toe** | `DR-T` | `R-T` | `HR-T` | `WR-T` | `-T` | `TAOU` |
+| **-tussen** ||||| `TUN` |
+| **-tussenuit** ||||| `TOINT` |
+| **-uit** ||||| `OIT` |
+| **-van** | `DR-FN` | `R-FN` | `HR-FN` | `WR-FN` | `-FN` | `V-` |
+| **-vandaan** ||||| `VAND` |
+| **-voor** | `DR-FR` | `R-FR` | `HR-FR` | `WR-FR` | `-FR` | `VOER` |
