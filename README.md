@@ -1,8 +1,10 @@
 # plover_dutch
 
-This is my effort towards constructing a steno system for the Dutch language, using the Ireland layout usually used for writing English. I try to keep this Dutch system as similar as possible to Plover's English system, to minimize confusion between the two. However, there are quite a few differences that are necessary to make this system practical.
+This is my effort towards constructing a steno system for the Dutch language, using the Ireland layout usually used for writing English. I try to keep this Dutch system as similar as possible to Plover's English system, to minimize confusion between the two. After all, anyone writing in Dutch will probably also have to write in English rather often. However, there are quite a few differences that are necessary to make this system practical.
 
-> **Warning:** this system is not finalized. I am definitely still going to finetune the rules a bit more. Furthermore, the dictionary is still very small (~700 entries at the time of writing). I'm adding words as I encounter them, but this is not a very fast process.
+> **Warning:** this system is not finalized. I am still in the process of finetuning the rules, which also means the description below is permanently out of date. Furthermore, the dictionary is still very small (~1600 entries at the time of writing). I'm adding words as I encounter them, but this is not a very fast process.
+>
+> If you want to use this system, and you run into problems, feel free to open an issue.
 
 
 ## Vowels
