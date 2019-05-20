@@ -43,8 +43,8 @@ Mostly the same as in English. The following are different:
 
 | Phoneme | Stroke | Remarks |
 |:--:|:--:|----|
-| sch | `SH` | |
-| schr | `SR` | |
+| sch | `SKH` | |
+| schr | `SKHR` | |
 | j | `KWR` | as in jas, not as in jeans |
 | ch | `KH` | |
 | g | `TKPW` | as in either gas or goal |
