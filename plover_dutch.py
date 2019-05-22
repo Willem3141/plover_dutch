@@ -29,7 +29,9 @@ NUMBERS = {
 UNDO_STROKE_STENO = '*'
 
 ORTHOGRAPHY_RULES = [
+    
     # == +e / +en / +er ==
+    
     # lat + en = latten
     (r'^(.*[^aeiou][aeiou])([bdfgklmnprst]) \^ (e|en|er)$', r'\1\2\2\3'),
     # laat + en = laten
@@ -37,6 +39,38 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*)ee([bdfgklmnprst]) \^ (e|en|er)$', r'\1e\2\3'),
     (r'^(.*)oo([bdfgklmnprst]) \^ (e|en|er)$', r'\1o\2\3'),
     (r'^(.*)uu([bdfgklmnprst]) \^ (e|en|er)$', r'\1u\2\3'),
+    
+    # == diminutive ending +je ==
+    # (rules taken from http://www.dutchgrammar.com/nl/?n=NounsAndArticles.16)
+    
+    # short or long vowel -> +tje
+    (r'^(.*[^aeiou])?a \^ je$', r'\1aatje'),
+    (r'^(.*[^aeiou])?i \^ je$', r'\1ietje'),
+    (r'^(.*[^aeiou])?o \^ je$', r'\1ootje'),
+    (r'^(.*[^aeiou])?u \^ je$', r'\1uutje'),
+    (r'^(.*[^aeiou])?y \^ je$', r"\1y'tje"),
+    (r'^(.*)(a|e|i|o|u|ij|uw) \^ je$', r'\1\2tje'),
+    # long vowel + r/l/n -> +tje
+    (r'^(.*)(aa|ee|ie|oo|uu|aai|ai|au|ee|ei|eu|ie|ij|oe|ou|ui)([rln]) \^ je$', r'\1\2\3tje'),
+    # unstressed er/el/en/or -> +tje
+    # we can't distinguish stressed / unstressed, so do this for every word with at least five letters
+    (r'^(.*..[^aeiou])(er|el|en|or) \^ je$', r'\1\2tje'),
+    
+    # long vowel + m -> +pje
+    (r'^(.*)(aa|ee|ie|oo|uu|aai|ai|au|ee|ei|eu|ie|ij|oe|ou|ui)m \^ je$', r'\1\2mpje'),
+    # lm/rm -> +pje
+    (r'^(.*)(l|r)m \^ je$', r'\1\2mpje'),
+    # unstressed em/um -> +pje
+    # we can't distinguish stressed / unstressed, so do this for every word with at least five letters
+    (r'^(.*..[^aeiou])(em|um) \^ je$', r'\1\2pje'),
+    
+    # unstressed ing -> +kje
+    # we can't distinguish stressed / unstressed, so do this for every word with at least six letters
+    (r'^(.*..[^aeiou])ing \^ je$', r'\1inkje'),
+    
+    # short vowel + r/l/n/m/ng -> +etje
+    (r'^(.*[^aeiou])?(a|e|i|o|u)(r|l|n|m) \^ je$', r'\1\2\3\3etje'),
+    (r'^(.*[^aeiou])?(a|e|i|o|u)ng \^ je$', r'\1\2ngetje'),
 ]
 
 ORTHOGRAPHY_RULES_ALIASES = {}
