@@ -44,10 +44,8 @@ ORTHOGRAPHY_RULES = [
     # (rules taken from http://www.dutchgrammar.com/nl/?n=NounsAndArticles.16)
     
     # short or long vowel -> +tje
-    (r'^(.*[^aeiou])?a \^ je$', r'\1aatje'),
+    (r'^(.*[^aeiou])?(a|o|u) \^ je$', r'\1\2\2tje'),
     (r'^(.*[^aeiou])?i \^ je$', r'\1ietje'),
-    (r'^(.*[^aeiou])?o \^ je$', r'\1ootje'),
-    (r'^(.*[^aeiou])?u \^ je$', r'\1uutje'),
     (r'^(.*[^aeiou])?y \^ je$', r"\1y'tje"),
     (r'^(.*)(a|e|i|o|u|ij|uw) \^ je$', r'\1\2tje'),
     # long vowel + r/l/n -> +tje
