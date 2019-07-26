@@ -2,7 +2,7 @@
 
 This is my effort towards constructing a steno system for the Dutch language, using the Ireland layout usually used for writing English. I try to keep this Dutch system as similar as possible to Plover's English system, to minimize confusion between the two. After all, anyone writing in Dutch will probably also have to write in English rather often. However, there are quite a few differences that are necessary to make this system practical.
 
-> **Warning:** this system is not finalized. I am still in the process of finetuning the rules, which also means the description below is permanently out of date. Furthermore, the dictionary is still very small (~1600 entries at the time of writing). I'm adding words as I encounter them, but this is not a very fast process.
+> **Warning:** this system is not finalized. I am still in the process of finetuning the rules, which also means the description below is permanently out of date. Furthermore, the dictionary is still pretty small (~3800 entries at the time of writing). I'm adding words as I encounter them, but this is not a very fast process.
 >
 > If you want to use this system, and you run into problems, feel free to open an issue.
 
@@ -64,13 +64,18 @@ Because `-TZ` cannot be stroked (we don't use the Philly shift or stuff like tha
 | -en | `-Z` | |
 | -ten | `-Z` | not `-TZ` because that cannot be done |
 
+The _-e_ ending of adjectives is made by simply adding a star, for example `TKPWROET` _groot_ versus `TKPWRO*ET` _grote_.
+
 Here is an incomplete list of other interesting endings:
 
 | Phoneme | Stroke | Remarks |
 |:--:|:--:|----|
 | ch / g | `-G` | |
+| lijk / ling / lig | `-LG` | |
 | ng / nk | `-PBG` | in case of a conflict, _nk_ gets a `*` |
 | tie / sie | `-GS` | like in actie; this is just for consistency with English |
+| je / tje / pje / kje | `-PG` | |
+| w | `-FRPBLG` | after _u_, such as _duw_, _eeuw_, _lauw_, can usually be omitted unless there is a conflict |
 
 
 ## Briefs
