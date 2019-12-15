@@ -1,8 +1,8 @@
 # plover_dutch
 
-This is my effort towards constructing a steno system for the Dutch language, using the Ireland layout usually used for writing English. I try to keep this Dutch system as similar as possible to Plover's English system, to minimize confusion between the two. After all, anyone writing in Dutch will probably also have to write in English rather often. However, there are quite a few differences that are necessary to make this system practical.
+This is my effort towards constructing a steno system for the Dutch language, using the Ireland layout usually used for writing English. I try to keep this Dutch system as similar as possible to Plover's English system, to minimize confusion between the two. After all, anyone writing in Dutch will probably also have to write in English rather often. However, quite a few differences are unavoidable to make this system practical.
 
-> **Warning:** this system is not finalized. I am still in the process of finetuning the rules, which also means the description below is permanently out of date. Furthermore, the dictionary is still pretty small (~3800 entries at the time of writing). I'm adding words as I encounter them, but this is not a very fast process.
+> **Warning:** this system is not finalized. I am still in the process of finetuning the rules, which also means the description below is permanently out of date. Furthermore, the dictionary is still pretty small (~4500 entries at the time of writing). I'm adding words as I encounter them, but this is not a very fast process.
 >
 > If you want to use this system, and you run into problems, feel free to open an issue.
 
@@ -25,16 +25,16 @@ The main vowels are spelt in the same way as in English (that is, vowels that so
 
 Note that, just like in English, this system is phonetic, that is, theoretically the spelling doesn't matter. However, the spelling of Dutch is way more regular than the spelling of English, which makes it easier to be consistent with short and long vowels. In many cases, the choice between long and short is therefore spelling-inspired. For example, the word _planeet_ is stroked with `AE` (long _a_) as `PHRAE/NAEUT`, not with `A` (short _a_), because _pla_ is an open syllable in the spelling (even though in practice, many people say it with a short _a_ anyway. On the other hand, wherever sensible, I do try to put the variants in (in fact, `PHRA/NAEUT` does work as well).
 
-These are the diphtongues:
+These are the diphthongs:
 
 | Phoneme | Stroke | Remarks |
 |:--:|:--:|----|
-| au | `AU` | `AU` and `OU` sound the same, and are distinguished by spelling |
+| au | `AU` | will move to `OU` soon, see [this issue](https://github.com/Willem3141/plover_dutch/issues/7) |
 | ou | `OU` | |
 | ij / ei / aai | `AOEU` | in case of a conflict, the _ei_ spelling gets a `*` |
 | oe | `AOU` | |
-| oi / ooi / ui | `OEU` | |
-| eu | `AO` | also used as a random disambiguator |
+| oi / oei / ooi / ui | `OEU` | _ui_ will move to `AU` soon, see [this issue](https://github.com/Willem3141/plover_dutch/issues/7) |
+| eu | `AO` | also used as a random disambiguator, and for prefixes |
 
 
 ## Initial consonants
