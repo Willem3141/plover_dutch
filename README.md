@@ -29,11 +29,11 @@ These are the diphthongs:
 
 | Phoneme | Stroke | Remarks |
 |:--:|:--:|----|
-| au | `AU` | will move to `OU` soon, see [this issue](https://github.com/Willem3141/plover_dutch/issues/7) |
+| ui | `AU` | |
 | ou | `OU` | |
 | ij / ei / aai | `AOEU` | in case of a conflict, the _ei_ spelling gets a `*` |
 | oe | `AOU` | |
-| oi / oei / ooi / ui | `OEU` | _ui_ will move to `AU` soon, see [this issue](https://github.com/Willem3141/plover_dutch/issues/7) |
+| oi / oei / ooi | `OEU` | |
 | eu | `AO` | also used as a random disambiguator, and for prefixes |
 
 
