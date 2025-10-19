@@ -7,6 +7,20 @@ This is my effort towards constructing a steno system for the Dutch language, us
 > If you want to use this system, and you run into problems, feel free to open an issue.
 
 
+## Installation
+
+To install the plugin, open Plover's built-in Plugins Manager (_Tools > Plugins Manager_). Then click the Git button (the small button to the right of the Install/Update button), in the resulting dialog fill out the repository link `https://github.com/Willem3141/plover_dutch` and click OK.
+
+To switch Plover to the Dutch system, open the settings dialog, and in the _System_ tab change the system to _Dutch Stenotype_. (Tip: you can use the [plover_system_switcher](https://github.com/nsmarkop/plover_system_switcher) plugin to define strokes to switch between Dutch and English. I use `"*FP": {PLOVER:SWITCH_SYSTEM:Dutch Stenotype}"` and `"TKPWHR*EURB": "{PLOVER:SWITCH_SYSTEM:English Stenotype}"` for this purpose.)
+
+You will initially end up with an empty list of dictionaries for the Dutch system. To fix this, download `nl.json` (which takes the place of the original English `main.json`) from this repository and add it to the dictionary list. You can also make a new empty user dictionary to take the place of the English `user.json` (I called mine `nl-user.json`). Any other dictionaries you may be using with the English system (such as `commands.json`) you can also add to the list. The key assignment of the Dutch system is compatible with the English one (see below for details), so these dictionaries should usually just work, unless they happen to conflict with some Dutch strokes.
+
+
+### For developers
+
+This paragraph is relevant only if you would like to make changes to the Dutch system plugin. In that case, instead of using the Plugins Manager, use the instructions [here](https://plover.readthedocs.io/en/latest/plugin-dev/setup.html#installation) to install the plugin from a local Git clone. In short: clone this repository, `cd` into it, and run `<path_to_plover> -s plover_plugins install -e .`. This way, you can test changes locally.
+
+
 ## Layout
 
 The steno layout is almost identical to the English layout, with the addition of an (optional) no-space key `^` as the upper half of `S-`. Furthermore, the `-Z` key is actually used for the _-en_ ending instead of _-z_, but we'll still refer to this key as `-Z`. More details below.
